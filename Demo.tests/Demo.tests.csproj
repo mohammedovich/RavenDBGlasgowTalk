@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{560082A6-B3DA-4782-BE92-031F2AF2DBAC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demo.tests</RootNamespace>
+    <AssemblyName>Demo.tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Esent.Interop">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\Esent.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoAPI">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\GeoAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory.CSharp">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\ICSharpCode.NRefactory.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Jint.Raven">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\Jint.Raven.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net.Contrib.Spatial.NTS">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\Lucene.Net.Contrib.Spatial.NTS.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="NetTopologySuite">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerCollections">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\PowerCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Abstractions">
+      <HintPath>..\Demo.console\packages\RavenDB.Client.1.2.2142-Unstable\lib\net40\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Embedded">
+      <HintPath>..\Demo.console\packages\RavenDB.Embedded.1.2.2142-Unstable\lib\net40\Raven.Client.Embedded.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\Demo.console\packages\RavenDB.Client.1.2.2142-Unstable\lib\net40\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Database">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\Raven.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Spatial4n.Core.NTS">
+      <HintPath>..\Demo.console\packages\RavenDB.Database.1.2.2142-Unstable\lib\net40\Spatial4n.Core.NTS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="xunit">
+      <HintPath>..\Demo.console\packages\xunit.1.9.1\lib\net20\xunit.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.msbuild">
+      <HintPath>..\Demo.console\packages\xunit.1.9.1\lib\net20\xunit.runner.msbuild.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.tdnet">
+      <HintPath>..\Demo.console\packages\xunit.1.9.1\lib\net20\xunit.runner.tdnet.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.runner.utility">
+      <HintPath>..\Demo.console\packages\xunit.1.9.1\lib\net20\xunit.runner.utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1 - Accessing.cs" />
+    <Compile Include="2 - Creation.cs" />
+    <Compile Include="3 - Update.cs" />
+    <Compile Include="4 - Load and Delete.cs" />
+    <Compile Include="5 - Query.cs" />
+    <Compile Include="6 - Indexes.cs" />
+    <Compile Include="7 - MapReduce.cs" />
+    <Compile Include="8 - MultiMap.cs" />
+    <Compile Include="Domain\Animalo\Animal.cs" />
+    <Compile Include="Domain\Animalo\Cat.cs" />
+    <Compile Include="Domain\Animalo\Dog.cs" />
+    <Compile Include="Domain\Company.cs" />
+    <Compile Include="Domain\Employee.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\data\Data" />
+    <None Include="bin\Debug\data\logs\RVN.log" />
+    <None Include="bin\Debug\data\logs\RVNres00001.jrs" />
+    <None Include="bin\Debug\data\logs\RVNres00002.jrs" />
+    <None Include="bin\Debug\data\system\RVN.chk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\data\raven-data.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\data\IndexDefinitions\" />
+    <Folder Include="bin\Debug\data\Indexes\" />
+    <Folder Include="bin\Debug\data\temp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
